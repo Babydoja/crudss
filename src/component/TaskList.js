@@ -69,10 +69,6 @@ try {
         index={index}
         />)
         }
-        
-      
-      
-      
       <Form handleInputChange={handleInputChange} name={name} createTask={createTask}/>
        
     </div>
