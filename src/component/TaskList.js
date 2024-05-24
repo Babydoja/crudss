@@ -19,7 +19,7 @@ const TaskList = () => {
 const createTask = async(e) =>{
     e.preventDefault()
 try {
-    await axios.post('http://localhost:5000/api/tasks/',formData)
+    await axios.post('https://backend-crud-fo1s.onrender.com/',formData)
   // toast.success("Task create successful")
     console.log(formData)
     getAllTask()
@@ -31,7 +31,7 @@ try {
   }
   const getAllTask = async()=>{
     try {
-      const {data}=await axios.get('http://localhost:5000/api/tasks/')
+      const {data}=await axios.get('https://backend-crud-fo1s.onrender.com/')
       setTasks(data)
     } catch (error) {
       console.log(error);
